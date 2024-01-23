@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../coding/college wallah c/sigma web dev/sigma-web-dev/spotify"
+		},
+		{
+			"name": "spotify-clone",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "spotify-clone"
+	}
+}

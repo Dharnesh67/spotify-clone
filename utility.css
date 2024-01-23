@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+}
+.jc {
+  justify-content: center;
+}
+.ac{
+  align-items: center;
+}
+.brdr {
+  border: 1px solid white;
+}
+.r{
+    border-radius: 8px;
+}
+.m-1{
+  margin:9px;
+}
+.p-1{
+  padding:10px;
+}
+
+.icon{
+  width: 21px;
+}
