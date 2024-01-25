@@ -23,3 +23,8 @@
 .icon{
   width: 21px;
 }
+
+.pointer:hover{
+  cursor: pointer;
+  font-size: 11px;
+}
