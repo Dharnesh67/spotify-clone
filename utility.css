@@ -49,3 +49,6 @@
   background-color: #666;
   border-radius: 8px;
 }
+.hover:hover {
+  width: 2em;
+}

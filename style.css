@@ -20,13 +20,14 @@ body {
 .right {
   background-color: #121212;
   width: 76.5vw;
-  height: 98vh;
+  height: 97vh;
   overflow-y: hidden;
+  position: relative;
 }
 .Home {
   height: 16vh;
   margin-top: 0;
-  /* padding: 10px 0 0 0; */
+  padding: 10px 0 0 0;
   background-color: #121212;
 }
 .library {
@@ -38,6 +39,7 @@ body {
 }
 .logo img {
   margin: 7px 0 0px 3px;
+  padding: 7px 0 0px 0px;
 }
 .Home ul li {
   width: 21px;
@@ -65,10 +67,12 @@ body {
   gap: 15px;
   position: absolute;
   bottom: 10px;
+ 
 }
 .footer a {
   font-style: normal;
   color: gray;
+  text-decoration: none;
 }
 .header {
   display: flex;
@@ -150,6 +154,7 @@ body {
 .signup:hover {
   color: white;
   /* padding: 15px; */
+  cursor: pointer;
 }
 .Login {
   background-color: #ffffff;
@@ -162,6 +167,21 @@ body {
 }
 .Login:hover {
   background-color: #00ff59;
-  padding: 25px 50.5px;
+  padding: 22px 50.5px;
   font-weight: bolder;
+  cursor: pointer;
+}
+.playbar {
+  /* display: flex; */
+  background-color: #000000;
+  width: 99%;
+  padding: 19px 7px;
+  margin: 0px 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  left: 0px;
+}
+.songbuttons {
+  gap: 20px;
 }
