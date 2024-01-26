@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+  <!-- Circular Background -->
+  <circle cx="12" cy="12" r="11" fill="#00ff00"/>
+  <!-- Play Button Path centered within the circle -->
+  <g transform="translate(3, 3)">
+    <path d="M5 13V5L15 10L5 13Z" fill="#000000"/>
+  </g>
+</svg>

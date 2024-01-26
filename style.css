@@ -15,55 +15,40 @@ body {
   margin-top: 10px;
 }
 .left {
-  width: 25vw;
-  /* height: 90vh; */
+  width: 23vw;
 }
 .right {
   background-color: #121212;
-  width: 75vw;
-  height: 89vh;
+  width: 76.5vw;
+  height: 98vh;
+  overflow-y: hidden;
 }
-.left .Home {
-  height: 14vh;
+.Home {
+  height: 16vh;
   margin-top: 0;
-  /* padding: 20px; */
+  /* padding: 10px 0 0 0; */
   background-color: #121212;
 }
 .library {
-  min-height: 50vh;
+  min-height: 75vh;
   margin: 10px 10px 0px 10px;
   background-color: #121212;
+  position: relative;
+  overflow: hidden;
 }
 .logo img {
-  margin: 17px 0 0px 32px;
+  margin: 7px 0 0px 3px;
 }
 .Home ul li {
   width: 21px;
   list-style: none;
   gap: 6px;
-  margin: 16px 0 14px 32px;
+  margin: 28px 0 14px 3px;
   display: flex;
   gap: 20px;
 }
-.footer {
-  width: 99vw;
-  height: 86px;
-  position: absolute;
-}
-/* .heading img {
-  width: 21px;
-  gap: 6px;
-  margin: 4px 0 14px 0px;
-  display: flex;
-  gap: 20px;
-}
-.heading h2 {
-  font-size: 14px;
-  margin: 6px 0 0 12px;
-} */
 .heading {
   width: 100%;
-  /* padding-top: px; */
   gap: 10px;
   font-size: 10px;
   padding: 0 0 15px 0;
@@ -77,9 +62,106 @@ body {
 .footer {
   display: flex;
   font-size: 10px;
-  gap: 10px;
+  gap: 15px;
+  position: absolute;
+  bottom: 10px;
 }
-a {
+.footer a {
   font-style: normal;
   color: gray;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background-color: #141414;
+  margin: 10px;
+}
+.header > * {
+  padding: 20px 30px;
+}
+.spotify-playlist {
+  padding: 15px;
+}
+.spotify-playlist .card {
+  width: 210px;
+  height: 300px;
+  /* margin: 1px 0; */
+  padding: 10px;
+  background-color: #2b2a2a;
+  overflow: hidden;
+  position: relative;
+}
+.card:hover {
+  background-color: #2b2a2a98;
+}
+.card > * {
+  padding: 5px 0 0 0;
+}
+.card p {
+  color: #9e9e9e;
+  opacity: 0.7;
+  font-size: 13px;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+  height: 69%;
+  border-radius: 8px;
+}
+.card img:hover {
+  object-fit: cover;
+  /* height:70% ; */
+}
+.cardcontainer {
+  gap: 25px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 75vh;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.play {
+  width: 62px;
+  display: flex;
+  position: absolute;
+  top: 168px;
+  right: 21px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.play:hover {
+  opacity: 1;
+  top: 160px;
+}
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+.signup {
+  background-color: #12121200;
+  color: rgb(162, 162, 162);
+  caret-color: #1db954;
+  padding: 10px;
+  border: transparent;
+  font-weight: bolder;
+}
+.signup:hover {
+  color: white;
+  /* padding: 15px; */
+}
+.Login {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  caret-color: #1db954;
+  padding: 25px 50px;
+  border-radius: 50px;
+  border: transparent;
+  font-weight: bold;
+}
+.Login:hover {
+  background-color: #00ff59;
+  padding: 25px 50.5px;
+  font-weight: bolder;
 }
