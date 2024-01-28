@@ -37,7 +37,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 6px; /* Adjust the width as needed */
+  width: 5px; /* Adjust the width as needed */
 }
 
 ::-webkit-scrollbar-thumb {

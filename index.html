@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify - Web Player: Music for everyone</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" href="utility.css">
     </head>
     <body>
@@ -31,7 +31,10 @@
                 <div class="library r p-1">
                     <div class="heading flex ac pointer">
                         <img src="img/library.svg" alt="">
-                        <h2>Your Library</h2>
+                        <h2><a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk&list=PL15B1E77BB5708555">Your Library</a></h2>
+                    </div>
+                    <div class="songlist">
+                        <ul></ul>
                     </div>
                     <div class="footer">
                         <div>
@@ -137,19 +140,20 @@
                             <h3>Dinner With Friends</h3>
                             <p>The perfect soundtrack to those long nights over dinner</p>
                         </div>
-                    </div>
-                    <div class="playbar r ">
-                        <div class="songinfo">
-
-                        </div>
-                        <div class="songbuttons flex jc ac pointerp">
-                            <img class="hover" src="img/presong.svg" alt="">
-                            <img class="hover" src="img/play.svg" alt="">
-                            <img class="hover" src="img/nextsong.svg" alt="">
-                        </div>
-                        <div class="songtime">
-                            
-
+                        <div class="playbar">
+                            <div class="seekbar">
+                                <div class="progress"></div>
+                            </div>
+                           <div class="belowbar">
+                            <div class="songinfo"></div>
+                            <div class="songtime"></div>
+                            <!-- <div class="duration"></div> -->
+                            <div class="songbuttons flex jc ac ">
+                                <img class="hover pointerp" src="img/presong.svg" alt="">
+                                <img id="play" class="hover pointerp" src="img/play.svg" alt="">
+                                <img class="hover pointerp" src="img/nextsong.svg" alt="">
+                            </div>
+                           </div>
                         </div>
                     </div>
                 </div>
