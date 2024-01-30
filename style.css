@@ -40,7 +40,7 @@ body {
   flex-wrap: wrap;
 }
 .logo img {
-  width:60%;
+  width: 120px;
   margin: 10px 0 8px 23px;
   padding: 7px 0 0px 0px;
 }
@@ -169,8 +169,8 @@ body {
 }
 .Login:hover {
   background-color: #00ff59;
-  padding: 22px 50.5px;
-  font-weight: bolder;
+  padding: 24px 51px;
+  /* font-weight: bolder; */
   cursor: pointer;
 }
 .playbar {
@@ -257,7 +257,7 @@ body {
   position: relative;
   width: 2%;
   border-radius: 10px;
-  transition: width 0.3s ease-in-out;
+  transition: width 0s ease-in-out;
 }
 .songinfo {
   font-size: 10px;
@@ -275,4 +275,53 @@ body {
   position: absolute;
   top: 55%;
   right: 5%;
+}
+.ham{
+  display:none;
+}
+.close{
+  display:none;
+}
+@media (max-width: 900px) {
+  .left {
+    width: 333px;
+    position: absolute;
+    left: -333px;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+    background-color: black;
+  }
+  .left .library {
+    height:75vh;
+  }
+  .right {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    transition: all 0s ease-in-out;
+  }
+  .header .nav img{
+    opacity: 0;
+  }
+  .ham{
+    transition: all 0.3s ease-in-out;
+    display:block;
+    width: 35px;
+    margin: 0px 20px;
+    padding: 0;
+  }
+  .playbar {
+    width: 98vw;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+  .close{
+    display:block;
+    width: 25px;
+    position: absolute;
+    right: 0px;
+    /* padding: 0; */
+    margin: 30px 3dvh;
+  }
 }

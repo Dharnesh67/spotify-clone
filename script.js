@@ -128,3 +128,14 @@ let p = document.querySelector(".seekbar").addEventListener("click", (e) => {
   let duration = currentsong.duration;
   currentsong.currentTime = (clickX / width) * duration;
 });
+
+
+// add an event listener to the hamburger button
+document.querySelector(".ham").addEventListener("click", () => {
+  document.querySelector(".left").style.left=0;
+  document.querySelector(".right").style.filter="blur(5px)";
+});
+document.querySelector(".close").addEventListener("click", () => {
+  document.querySelector(".left").style.left="-100%";
+  document.querySelector(".right").style.filter="blur(0px)";
+});

@@ -1,164 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify - Web Player: Music for everyone</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="utility.css">
-    </head>
-    <body>
-        <!-- <img src="logo.svg" alt=""> -->
-        <div class="container flex">
-            <div class="left r">
-                <div class="Home r m-1 p-1">
-                    <!-- upper==Home -->
-                    <div class="logo pointer">
-                        <img src="img/logo.svg" alt="">
-                    </div>
-                    <ul>
-                        <li>
-                            <img class="pointer" src="img/home.svg" alt="home">
-                            <p class="pointerp">Home</p>
-                        </li>
-                        <li>
-                            <img class="pointer" src="img/search.svg" alt="Search">
-                            <p class="pointerp">Search</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="library r p-1">
-                    <div class="heading flex ac pointer">
-                        <img src="img/library.svg" alt="">
-                        <h2><a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk&list=PL15B1E77BB5708555">Your Library</a></h2>
-                    </div>
-                    <div class="songlist">
-                        <ul></ul>
-                    </div>
-                    <div class="footer">
-                        <div>
-                            <a href="https://www.spotify.com/jp/legal/">
-                                <span>Legal</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.spotify.com/jp/privacy/">
-                                <span>Privacy Center</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.spotify.com/jp/legal/privacy-policy/">
-                                <span>Privacy Policy</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.spotify.com/jp/legal/cookies-policy/">
-                                <span>Cookies</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3">
-                                <span>About Ads</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.spotify.com/jp/accessibility/">
-                                <span>Accessibility</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right r">
-                <div class="header r">
-                    <div class="nav">
-                        <img src="img/larrow.svg" alt="">
-                        <img src="img/rarrow.svg" alt="">
-                    </div>
-                    <div class="buttons">
-                        <button class="signup">Sign up</button>
-                        <button class="Login">Log in</button>
-                    </div>
-                </div>
-                <div class="spotify-playlist">
-                    <h1>Spotify playlists</h1>
-                    <div class="cardcontainer flex">
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/playlist1.jpeg" alt="">
-                            <h3>lofi beats</h3>
-                            <p>chill beats, lofi vibes, new tracks every week...</p>
-                        </div>
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/holly.jpeg" alt="">
-                            <h3>Today's Top Hits</h3>
-                            <p>Teddy Swims is on top of the Hottest 50!</p>
-                        </div>
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/allin.jpeg" alt="">
-                            <h3>All Out 2024's</h3>
-                            <p>The biggest songs of the 2020s.</p>
-                        </div>
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/aujla.jpg" alt="">
-                            <h3>This is Karan Aujla</h3>
-                            <p>The biggest songs of karan aujla.</p>
-                        </div>
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/krsna.jpeg" alt="">
-                            <h3>Desi Hip Hop</h3>
-                            <p>The biggest songs SEEDHE MAUT PARADOX RAFTAAR .</p>
-                        </div>
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/karan.jpeg" alt="">
-                            <h3>This is Karan Aujla</h3>
-                            <p>The biggest songs of karan aujla.</p>
-                        </div>
-                        <div class="card r">
-                            <div class="play">
-                                <img src="img/playbutton.svg" alt="">
-                            </div>
-                            <img src="img/i found u.jpeg" alt="">
-                            <h3>Dinner With Friends</h3>
-                            <p>The perfect soundtrack to those long nights over dinner</p>
-                        </div>
-                        <div class="playbar">
-                            <div class="seekbar">
-                                <div class="progress"></div>
-                            </div>
-                           <div class="belowbar">
-                            <div class="songinfo"></div>
-                            <div class="songtime"></div>
-                            <!-- <div class="duration"></div> -->
-                            <div class="songbuttons flex jc ac ">
-                                <img class="hover pointerp" src="img/presong.svg" alt="">
-                                <img id="play" class="hover pointerp" src="img/play.svg" alt="">
-                                <img class="hover pointerp" src="img/nextsong.svg" alt="">
-                            </div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <!-- <img src="logo.svg" alt=""> -->
+    <div class="container flex">
+      <div class="left r">
+        <img class="close" src="img/close.svg" alt="">
+        <div class="Home r m-1 p-1">
+          <!-- upper==Home -->
+          <div class="logo pointer flex">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <ul>
+            <li>
+              <img class="pointer" src="img/home.svg" alt="home" />
+              <p class="pointerp">Home</p>
+            </li>
+            <li>
+              <img class="pointer" src="img/search.svg" alt="Search" />
+              <p class="pointerp">Search</p>
+            </li>
+          </ul>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="library r p-1">
+          <div class="heading flex ac pointer">
+            <img src="img/library.svg" alt="" />
+            <h2>
+              <a href="https://www.youtube.com/watch?v=kJQP7kiw5Fk&list=PL15B1E77BB5708555"
+                >Your Library</a
+              >
+            </h2>
+          </div>
+          <div class="songlist">
+            <ul></ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/">
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/">
+                <span>Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/">
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/">
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3">
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/">
+                <span>Accessibility</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right r">
+        <div class="header r">
+          <img class="ham" src="img/hamburger.svg" alt="" />
+          <div class="nav">
+            <img src="img/larrow.svg" alt="" />
+            <img src="img/rarrow.svg" alt="" />
+          </div>
+          <div class="buttons">
+            <button class="signup">Sign up</button>
+            <button class="Login">Log in</button>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <h1>Spotify playlists</h1>
+          <div class="cardcontainer flex">
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/playlist1.jpeg" alt="" />
+              <h3>lofi beats</h3>
+              <p>chill beats, lofi vibes, new tracks every week...</p>
+            </div>
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/holly.jpeg" alt="" />
+              <h3>Today's Top Hits</h3>
+              <p>Teddy Swims is on top of the Hottest 50!</p>
+            </div>
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/allin.jpeg" alt="" />
+              <h3>All Out 2024's</h3>
+              <p>The biggest songs of the 2020s.</p>
+            </div>
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/aujla.jpg" alt="" />
+              <h3>This is Karan Aujla</h3>
+              <p>The biggest songs of karan aujla.</p>
+            </div>
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/krsna.jpeg" alt="" />
+              <h3>Desi Hip Hop</h3>
+              <p>The biggest songs SEEDHE MAUT PARADOX RAFTAAR .</p>
+            </div>
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/karan.jpeg" alt="" />
+              <h3>This is Karan Aujla</h3>
+              <p>The biggest songs of karan aujla.</p>
+            </div>
+            <div class="card r">
+              <div class="play">
+                <img src="img/playbutton.svg" alt="" />
+              </div>
+              <img src="img/i found u.jpeg" alt="" />
+              <h3>Dinner With Friends</h3>
+              <p>The perfect soundtrack to those long nights over dinner</p>
+            </div>
+            <div class="playbar">
+              <div class="seekbar">
+                <div class="progress"></div>
+              </div>
+              <div class="belowbar">
+                <div class="songinfo"></div>
+                <div class="songtime"></div>
+                <!-- <div class="duration"></div> -->
+                <div class="songbuttons flex jc ac">
+                  <img class="hover pointerp" src="img/presong.svg" alt="" />
+                  <img id="play" class="hover pointerp" src="img/play.svg" alt="" />
+                  <img class="hover pointerp" src="img/nextsong.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
