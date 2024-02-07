@@ -1,4 +1,3 @@
-console.log('Lets write JavaScript');
 let currentSong = new Audio();
 let songs;
 let currFolder;
@@ -50,7 +49,6 @@ async function getSongs(folder) {
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach((e)=> {
         e.addEventListener("click", element => {
             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
-
         })
     })
 
@@ -70,7 +68,6 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayAlbums() {
-    console.log("displaying albums")
     let a = await fetch(`/songs/`)
     let response = await a.text();
     let div = document.createElement("div")
@@ -104,7 +101,6 @@ async function displayAlbums() {
     // Load the playlist whenever card is clicked
     Array.from(document.getElementsByClassName("cardcontainer")).forEach(e => { 
         e.addEventListener("click", async item => {
-            console.log("Fetching Songs")
             songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`)  
             playMusic(songs[0])
 
@@ -156,7 +152,6 @@ async function main() {
     // Add an event listener to previous
     previous.addEventListener("click", () => {
         currentSong.pause()
-        console.log("Previous clicked")
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
         if ((index - 1) >= 0) {
             playMusic(songs[index - 1])
@@ -166,7 +161,6 @@ async function main() {
     // Add an event listener to next
     next.addEventListener("click", () => {
         currentSong.pause()
-        console.log("Next clicked")
 
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
         if ((index + 1) < songs.length) {
@@ -176,7 +170,6 @@ async function main() {
 
     // Add an event to volume
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change", (e) => {
-        console.log("Setting volume to", e.target.value, "/ 100")
         currentSong.volume = parseInt(e.target.value) / 100
         if (currentSong.volume >0){
             document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("mute.svg", "volume.svg")
